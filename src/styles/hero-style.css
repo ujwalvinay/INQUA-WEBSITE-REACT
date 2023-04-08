@@ -1,0 +1,26 @@
+.hero-text
+{
+    width: 40rem;
+    margin: auto;
+    color: white;
+    margin: 4rem auto;
+    padding: 2rem 0;
+}
+
+.hero-text h1
+{
+    font-size: 240px;
+    font-family: 'origami';
+}
+h3
+{
+    font-family: 'codepro';
+}
+.right-h3
+{
+    text-align: right;
+}
+.special-text
+{
+    font-family: 'Courier New', Courier, monospace;
+}
