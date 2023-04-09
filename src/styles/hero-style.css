@@ -5,6 +5,7 @@
     color: white;
     margin: 4rem auto;
     padding: 2rem 0;
+    margin: 1px solid red;
 }
 
 .hero-text h1
@@ -23,4 +24,33 @@ h3
 .special-text
 {
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width:540px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      
+      body {
+        position: relative;
+      }
+    #root
+    {
+        overflow-x: hidden;
+        max-width: 100% !important;
+    }
+    .hero-text
+    {
+        width: 90%;
+        overflow-x:hidden ;
+    }
+    .hero-text h1
+    {
+        font-size: 120px;
+    }
+    .hero-text h3
+    {
+        font-size: 15px;
+    }
+
 }
