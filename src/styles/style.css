@@ -16,7 +16,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    position: relative;
+  }
 .navhero-section
 {
     background-size: cover;
