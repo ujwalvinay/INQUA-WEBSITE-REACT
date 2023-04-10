@@ -2,6 +2,7 @@ import './styles/App.css';
 import Hero from './components/hero';
 import About from './components/About';
 import ProShows from './components/proshow';
+import Events from './components/events';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,9 @@ function App() {
       </div>
       <div className='proshow-section'>
         <ProShows />
+      </div>
+      <div className='events-section'>
+        <Events />
       </div>
     </div>
   );
