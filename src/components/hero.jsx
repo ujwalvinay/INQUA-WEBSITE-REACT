@@ -1,9 +1,16 @@
 import React from 'react'
 import "../styles/hero-style.css";
 import Navbar from './navbar';
-import "../styles/style.css"
+import CountdownTimer from './CountdownTimer';
+import "../styles/style.css";
+
 function Hero()
 {
+    const THREE_DAYS_IN_MS = 1* 24 * 60 * 60 * 1000;
+    const NOW_IN_MS = new Date().getTime();
+  
+    const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
     return(
         <div className='hero-section'>
             <Navbar />
@@ -11,8 +18,11 @@ function Hero()
                 <h3>WELCOME TO</h3>
                 <h1>INQUA</h1>
                 <h3 className='right-h3'>INDIA<span className='special-text'>'</span>S MOST EXCITING EVENT</h3>
+                <div className='counter'>
+                    <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+                </div>
             </div>
-            
+
         </div>
     )
 }

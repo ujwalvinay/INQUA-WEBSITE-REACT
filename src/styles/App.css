@@ -6,22 +6,33 @@
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 }
-
-:root {
-
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+.hero-section
+{
+	background-image: url('./hero-bg.svg');
+	padding-bottom: 3rem;
 }
 
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #fff;
+}
+.mob-brand-logo
+{
+	display: none;
+}
+.space-add
+{
+	padding-left: 1rem;
+}
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
-	font-weight: 600;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
+	padding:3rem;
+	padding-top: 5rem;	
 	color: var(--textColor);
 }
 
@@ -29,11 +40,11 @@ nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 1.2rem;
 }
 
 nav a:hover {
-	color: var(--textColor);
+	color: var(--secondaryColor);
 }
 
 header .nav-btn {
@@ -46,40 +57,46 @@ header .nav-btn {
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
+	position: fixed;
+	right: 1rem;
 }
-
+.brand-Logo
+{
+	width: 60px;
+}
+.logo
+{
+	width: 100%;
+}
 header div,
 nav {
 	display: flex;
 	align-items: center;
-	margin: auto;
-	gap: 8rem;
-	justify-content: center;
-	padding-left: 6rem;
-	padding-top: 1rem;
-}
-.inqua-logo
-{
-	width: 80px;
-}
-.hero-section
-{
-	background-image: url('./hero-bg.svg');
-	padding-bottom: 3rem;
+	gap: 7rem;
 }
 .buy-button
 {
-	padding: .75rem 2rem;
-	width: 10rem;
-	border: none;
-	border-radius: 10px;
+	padding: .5rem 1.5rem;
+	font-size: 18px;
+	font-weight: 600;
+	background-color: white;
 }
 @media only screen and (max-width: 1024px) {
+	header
+	{
+		justify-content: space-between;
+		padding-left: 1rem;
+	}
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
+		justify-content: center;
 	}
-
+	.mob-brand-logo
+	{
+		display: block !important;
+		width: 50px;
+	}
 	header nav {
 		position: fixed;
 		top: -100vh;
@@ -88,24 +105,37 @@ nav {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		background-color: #000;
+		
 		align-items: center;
 		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--mainColor);
+		gap: 5rem;
 		transition: 1s;
 	}
-
+	.brand-Logo
+	{
+		display: none;
+	}
 	header .responsive_nav {
 		transform: translateY(100vh);
+
 	}
 
 	nav .nav-close-btn {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
+		color: white;
 	}
 
 	nav a {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		color: #fff;
+	}
+	.buy-button
+	{
+		padding: .75rem 2rem;
+		font-size: 20px;
+		font-weight: 600;
 	}
 }

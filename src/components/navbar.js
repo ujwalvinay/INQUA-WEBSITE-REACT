@@ -13,16 +13,21 @@ function Navbar() {
 
 	return (
 		<header>
+			<div className="brand-Logo mob-brand-logo">
+				<img src="./images/inqua.png" className="logo" />
+			</div>
 			<nav ref={navRef}>
-				<a href="/#">About</a>
+				<a href="/#" className="space-add">About</a>
 				<a href="/#">Events</a>
-                <div className="brand-logo">
-                    <img src="../images/inqua.png" alt="" className="inqua-logo"/>
-                </div>
+				<div className="brand-Logo">
+					<img src="./images/inqua.png" className="logo" />
+				</div>
 				<a href="/#">Contact us</a>
-                <button type="button" className="buy-button">
-                    Buy Tickets
-                </button>
+				<a href="/#">
+					<button className="buy-button">
+						Buy Tickets
+					</button>
+				</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

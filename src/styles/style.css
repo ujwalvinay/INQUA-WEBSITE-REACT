@@ -10,6 +10,11 @@
     font-family: 'codepro'; /*a name to be used later*/
     src: url('./fonts/CodePro.ttf'); /*URL to font*/
 }
+@font-face{
+    font-family: 'racer';
+    src: url('./fonts/racer.ttf');
+}
+
 *
 {
     padding: 0;

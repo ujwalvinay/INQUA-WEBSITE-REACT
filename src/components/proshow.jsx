@@ -4,7 +4,7 @@ export default function ProShows()
 {
     return (
         <div className='proshow-div'>
-            <h2 className='vertical-h2'>PRO SHOWS</h2>
+            <h2 className='vertical-h2 proshow-h2'>PRO SHOWS</h2>
             <div className='proshow-cards'>
                 <div class="card">
                     <div class="card__content">

@@ -1,3 +1,7 @@
+@font-face{
+  font-family: 'racerBoy';
+  src: url('../styles/fonts/racer.ttf');
+}
 .proshow-div
 {
     position: relative;
@@ -5,16 +9,19 @@
     background-image: url('../styles/images/Proshow-bg.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4rem 0;
+    padding: 10rem 0;
+}
+.proshow-h2
+{
+  left: -12rem !important;
 }
 .vertical-h2
 {
     position: absolute;
     transform: rotate(-90deg);
     top: 45%;
-    left: -18rem;
     font-size: 100px;
-    font-family: "ocra";
+    font-family: "racerBoy";
     font-weight: 600;
     opacity: .6;
 }
