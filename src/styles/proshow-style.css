@@ -13,7 +13,7 @@
 }
 .proshow-h2
 {
-  left: -12rem !important;
+  left: -17rem !important;
 }
 .vertical-h2
 {
@@ -26,95 +26,12 @@
     opacity: .6;
 }
 
-.card-div
+.proshow-cards
 {
-    text-align: center;
+  width: 80%;
+  margin: auto;
 }
-
-./*Keyframes to get the Sepia animation of social networks icons*/
-@keyframes filteranimation {
-    0% {
-      filter: sepia(50%);
-    }
-    100% {
-      filter: sepia(0%);
-    }
-  }
-  @keyframes counterfilter {
-    100% {
-      filter: sepia(50%);
-    }
-    0% {
-      filter: sepia(0%);
-    }
-  }
-  /*Selection to get black background and mint font while text get selected*/
- 
-  .proshow-cards
-  {
-    display: flex;
-    margin-left: 18rem;
-  }
-
-  /*Body of the card*/
-  .card {
-    margin: 50px;
-    min-width: 200px;
-    width: 300px;
-    min-height: 400px;
-    max-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*Background with royalty free picture and size*/
-    background: url("https://i.postimg.cc/pV3J5tzC/isaak.jpg");
-    background-size: cover;
-    border-radius: 1.5rem;
-    /*The hidden overflow is to get the text out of the card and hidden/non-clickable*/
-    overflow: hidden;
-    /*Little translation for the text while hovering the card*/
-    /*Content of the card and transition. The border radius is here to fit exactly with the border radius of the card*/
-  }
-  .card:hover .card__content {
-    top: 200px;
-    width: 100%;
-    background-color: rgba(62, 62, 61, 0.1);
-  }
-  .card__content {
-    position: relative;
-    top: 450px;
-    width: 100%;
-    text-align: center;
-    min-height: 400px;
-    max-height: 550px;
-    text-align: center;
-    background-color: rgba(62, 62, 61, 0);
-    border-radius: 1.5rem;
-    transition: all 700ms ease-in-out;
-  }
-  .card__title h2 {
-    font-family: "Yellowtail", cursive;
-    font-size: 2.3rem;
-    text-align: center;
-  }
-  .card__text p {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px;
-  }
-  
-  .card__links img {
-    width: 3rem;
-    margin: 10px;
-    filter: sepia(100%);
-    scale: 1;
-    transform: scale(1);
-    transition-duration: 700ms;
-    animation: counterfilter 500ms forwards;
-  }
-  .card__links img:hover {
-    animation: filteranimation 500ms forwards;
-    transform: scale(1);
-    transition-duration: 500ms;
-  }
+.proshow-cs
+{
+  width: 100%;
+}

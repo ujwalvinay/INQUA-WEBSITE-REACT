@@ -6,24 +6,7 @@ export default function ProShows()
         <div className='proshow-div'>
             <h2 className='vertical-h2 proshow-h2'>PRO SHOWS</h2>
             <div className='proshow-cards'>
-                <div class="card">
-                    <div class="card__content">
-                        <div class="card__title"><h2>DJ SNAKE</h2></div>
-                        <div class="card__text"><p>DJ night</p></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__content">
-                        <div class="card__title"><h2>DJ SNAKE</h2></div>
-                        <div class="card__text"><p>DJ night</p></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__content">
-                        <div class="card__title"><h2>DJ SNAKE</h2></div>
-                        <div class="card__text"><p>DJ night</p></div>
-                    </div>
-                </div>
+                <img src='../images/cs.jpg' alt='' className='proshow-cs'/>
             </div>
         </div>
         

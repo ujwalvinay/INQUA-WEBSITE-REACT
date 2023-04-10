@@ -10,7 +10,7 @@
     position: absolute;
     transform: rotate(-90deg);
     top: 45%;
-    left: -6rem;
+    left: -11rem;
     font-size: 100px;
     font-family: "racer";
     font-weight: 600;
@@ -43,11 +43,11 @@
     }
   .Card
   {
-    width: 350px;
+    width: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +73,7 @@
     {
         top: 50%;
         font-size: 60px;
-        left: -3rem;
+        left: -6rem;
     }
     .parent
     {
