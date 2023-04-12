@@ -13,7 +13,15 @@
 }
 .proshow-h2
 {
-  left: -17rem !important;
+  left: -17rem ;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 45%;
+  font-size: 100px;
+    font-family: "racer";
+    font-weight: 600;
+    opacity: .6;
+
 }
 .vertical-h2
 {
@@ -34,4 +42,12 @@
 .proshow-cs
 {
   width: 100%;
+}
+
+@media screen and (max-width:540px) {
+  .proshow-h2
+  {
+    font-size: 50px;
+    left: -7rem;
+  }
 }
