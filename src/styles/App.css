@@ -8,7 +8,7 @@
 }
 .hero-section
 {
-	background-image: url('./hero-bg.svg');
+	background-image: url('./hero-bg.png');
 	padding-bottom: 3rem;
 }
 
@@ -32,11 +32,27 @@ header {
 	justify-content: center;
 	position: relative;
 	height: 80px;
-	padding:3rem;
+	
 	padding-top: 5rem;	
 	color: var(--textColor);
+	
+	
 }
 
+nav
+{
+	background: rgba( 255, 255, 255, 0.2 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 6px );
+	-webkit-backdrop-filter: blur( 6px );
+	
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	
+}
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);

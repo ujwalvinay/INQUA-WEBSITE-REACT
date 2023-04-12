@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import About from './components/About';
 import ProShows from './components/proshow';
 import Events from './components/events';
+import Workshop from './components/workshop';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,9 @@ function App() {
       </div>
       <div className='events-section'>
         <Events />
+      </div>
+      <div className='workshop-section'>
+        <Workshop />
       </div>
     </div>
   );

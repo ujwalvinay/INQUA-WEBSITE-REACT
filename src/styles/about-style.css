@@ -2,7 +2,7 @@
 {
     position: relative;
     color: white;
-    background-image: url('../styles/about-bg.svg');
+    background-image: url('./hero-bg.png');
 }
 .about-div h2
 {

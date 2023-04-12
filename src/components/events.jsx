@@ -10,30 +10,22 @@ export default function Events()
             <div class="parent">
                 <div class="div1 section">
                     <div class="CSE Card">
-                        <p>DEPARTMENT OF</p>
-                        <h3>COMPUTER SCIENCE</h3>
-                        <p>ENGINEERING</p>
+                        <img src='../images/cardcs.png'/>
                     </div>
                 </div>
                 <div class="div2 section"> 
                     <div class="CE Card">
-                        <p>DEPARTMENT OF</p>
-                        <h3>CIVIL</h3>
-                        <p>ENGINEERING</p>
+                        <img src='../images/cardce.png'/>
                     </div>
                 </div>
                 <div class="div3 section"> 
                     <div class="EEE Card">
-                    <p>DEPARTMENT OF</p>
-                        <h3>ELECTRICAL</h3>
-                        <p>ENGINEERING</p>
+                        <img src='../images/cardeee.png' />
                     </div>
                 </div>
                 <div class="div4 section"> 
                     <div class="ECE Card">
-                        <p>DEPARTMENT OF</p>
-                        <h3>ELECTRONICS</h3>
-                        <p>ENGINEERING</p>
+                        <img src='../images/cardece.png'/>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
 {
     position: relative;
     color: white;
-    background-image: url('../styles/images/Proshow-bg.svg');
+    background-image: url('./hero-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10rem 0;

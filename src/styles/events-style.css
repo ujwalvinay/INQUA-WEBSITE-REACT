@@ -1,7 +1,7 @@
 .events-div
 {
     padding: 5rem;
-    background-image: url('images/events-bg.svg');
+    background-image: url('./hero-bg.png');
     position: relative;
     color: white;
 }
@@ -47,24 +47,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-    .CSE { 
-         
-        background-image: url('images/CSE-bg.svg');
+    .CSE img{ 
+            width: 100%;
         }
-    .CE { 
-        background-image: url('images/CE-bg.svg');
-        }
-    .EEE { 
-        background-image: url('images/EEE-bg.svg');
+    .CE img{ 
+            width: 100%;    
     }
-    .ECE { 
-            background-image: url('images/ECE-bg.svg');
+    .EEE img { 
+            width: 100%;
+        }
+    .ECE img{ 
+            width: 100%;
     }
 
 

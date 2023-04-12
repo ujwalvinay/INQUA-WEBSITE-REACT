@@ -1,0 +1,20 @@
+.workshop-section
+{
+    background-image: url('./hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+    position: relative;
+}
+.workshop-h2
+{
+    position: absolute;
+    top: 4rem;
+    left: -15rem;    
+    transform: rotate(-90deg);
+    font-size: 90px;
+    font-family: "racer";
+    font-weight: 600;
+
+}

@@ -6,7 +6,7 @@ export default function ProShows()
         <div className='proshow-div'>
             <h2 className='vertical-h2 proshow-h2'>PRO SHOWS</h2>
             <div className='proshow-cards'>
-                <img src='../images/cs.jpg' alt='' className='proshow-cs'/>
+                <img src='../images/ProShowCS.png' alt='' className='proshow-cs'/>
             </div>
         </div>
         
