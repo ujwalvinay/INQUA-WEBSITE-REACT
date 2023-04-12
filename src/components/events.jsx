@@ -11,22 +11,42 @@ export default function Events()
                 <div class="div1 section">
                     <div class="CSE Card">
                         <img src='../images/cardcs.png'/>
+                        <div class="cardbottom">          
+                        <h4>Inqua <span>'23</span></h4>
+                        <img class="arrow" src="../images/arrow.svg" />
                     </div>
+                    </div>
+                     
                 </div>
                 <div class="div2 section"> 
                     <div class="CE Card">
                         <img src='../images/cardce.png'/>
+                            <div class="cardbottom">          
+                            <h4>Inqua <span>'23</span></h4>
+                            <img class="arrow" src="../images/arrow.svg" />
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="div3 section"> 
                     <div class="EEE Card">
                         <img src='../images/cardeee.png' />
+                        <div class="cardbottom">          
+                        <h4>Inqua <span>'23</span></h4>
+                        <img class="arrow" src="../images/arrow.svg" />
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="div4 section"> 
                     <div class="ECE Card">
                         <img src='../images/cardece.png'/>
+                        <div class="cardbottom">          
+                        <h4>Inqua <span>'23</span></h4>
+                        <img class="arrow" src="../images/arrow.svg" />
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
