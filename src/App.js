@@ -20,7 +20,7 @@ function App() {
         <Events />
       </div>
       <div className='workshop-section'>
-        {/* <Workshop /> */}
+        <Workshop />
       </div>
     </div>
   );
