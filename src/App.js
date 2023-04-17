@@ -4,11 +4,13 @@ import About from './components/About';
 import ProShows from './components/proshow';
 import Events from './components/events';
 import Workshop from './components/workshop';
+import InkuCanvas from './components/inku';
 function App() {
   return (
     <div className="App">
       <div className='hero-section'>
         <Hero />
+        
       </div>
       <div className='about-section'>
         <About />
