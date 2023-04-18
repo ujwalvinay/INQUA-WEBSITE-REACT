@@ -53,8 +53,17 @@ h3
 
 .inku3D
 {
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    z-index: 100;
+    position: absolute;
+    top: 0;
+    left:50px;
+    width: 800px;
+    height: 800px;
+}
+
+@media screen and (max-width:540px) {
+    .inku3D
+    {
+        width: 80%;
+        height: 80%;
+    }
 }

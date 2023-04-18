@@ -18,7 +18,7 @@ const Scene = () => {
   );
 
   console.log(obj);
-  return <primitive object={obj} scale={2}  />;
+  return <primitive object={obj} scale={.7}  />;
 };
 
 

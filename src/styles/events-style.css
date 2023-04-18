@@ -116,10 +116,12 @@
 .arrow
 {
     width: 30px !important;
+    transition: 1s;
 }
 .Card:hover .arrow{
 	transform: rotate(-45deg);
 	padding: 2px;
+    transition-duration: 0.25s;
 
 }
 .cardbottom span{
@@ -150,4 +152,19 @@
     {
         margin-bottom: 3rem;
     }
+  }
+
+  .Card
+  {
+    border-radius:0 0 20px 20px;
+    backdrop-filter: blur(1.5px);
+    transition: 1s;
+  }
+  .Card:hover
+  {
+     box-sizing: content-box;
+    box-shadow: -8px 8px 0 0 #CCF62A; 
+    transform: translate(8px, -8px);
+    transition-duration: 0.25s;
+	
   }

@@ -10,6 +10,16 @@
 {
 	background-image: url('./hero-bg.png');
 	padding-bottom: 3rem;
+	margin: auto;
+}
+.hero-text
+{
+    width: 40rem;
+    margin: auto;
+    color: white;
+    margin: 4rem auto;
+    padding: 2rem 0;
+    position: relative;
 }
 
 :root {
