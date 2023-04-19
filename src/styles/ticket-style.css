@@ -1,0 +1,57 @@
+@font-face{
+    font-family: 'racerBoy';
+    src: url('../styles/fonts/racer.ttf');
+  }
+  .ticket-div
+  {
+      position: relative;
+      color: white;
+      background-image: url('./hero-bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 10rem 0;
+  }
+  .ticket-h2
+  {
+    left: -12rem ;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 45%;
+    font-size: 100px;
+      font-family: "racer";
+      font-weight: 600;
+      opacity: .6;
+  
+  }
+  .vertical-h2
+  {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 45%;
+      font-size: 100px;
+      font-family: "racerBoy";
+      font-weight: 600;
+      opacity: .6;
+  }
+  
+  .ticket-cards
+  {
+    width: 80%;
+    margin: auto;
+  }
+  .ticket-cs
+  {
+    width: 100%;
+  }
+  
+  @media screen and (max-width:540px) {
+    .ticket-div
+    {
+        padding-top: 0;
+    }
+    .ticket-h2
+    {
+      font-size: 60px;
+      left: -7rem;
+    }
+  }

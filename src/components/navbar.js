@@ -17,13 +17,13 @@ function Navbar() {
 				<img src="./images/inqua.png" className="logo" />
 			</div>
 			<nav ref={navRef}>
-				<a href="/#" className="space-add">About</a>
-				<a href="/#">Events</a>
+				<a href="/#about" className="space-add">About</a>
+				<a href="/#events">Events</a>
 				<div className="brand-Logo">
-					<img src="./images/inqua.png" className="logo" />
+					<a href="/#home"><img src="./images/inqua.png" className="logo" /></a>
 				</div>
-				<a href="/#">Contact us</a>
-				<a href="/#">
+				<a href="/#contactUs">Contact us</a>
+				<a href="/#buyTickets">
 					<button className="buy-button">
 						Buy Tickets
 					</button>

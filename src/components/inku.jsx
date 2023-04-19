@@ -9,13 +9,15 @@ import { useLoader } from '@react-three/fiber'
 import { CameraShake} from '@react-three/drei'
 
 const Scene = () => {
-  const materials = useLoader(MTLLoader,"../inkubot.mtl");
-  const obj = useLoader(OBJLoader, "../inkubot.obj", (loader) => {
+  const materials = useLoader(MTLLoader,"../inkubotlp.mtl");
+  const obj = useLoader(OBJLoader, "../inkubotlp.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
+    
   }
   
   );
+  
 
   console.log(obj);
   return <primitive object={obj} scale={.7}  />;

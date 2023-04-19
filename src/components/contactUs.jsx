@@ -11,7 +11,7 @@ function ContactUs()
                     <div class="contact-form">
                     <div class="imgDiv">
                     <div class="contact-us-info">
-                            <h3 class="heading-title">We're Always Eager to Hear From You!</h3>
+                            <h3 class="heading-title">We<span className='special-text'>'</span>re Always Eager to Hear From You!</h3>
                             <ul class="address-list">
                                 <li>
                                     <h5 class="title">Address</h5>
@@ -24,6 +24,7 @@ function ContactUs()
                                 <li>
                                     <h5 class="title">Phone</h5>
                                     <p><a href="tel:+0917034914676">(+091) 7034914676</a></p>
+                                    <p><a href="tel:+0917034914676">(+091) 9995033036</a></p>
                                 </li>
                             </ul>
                             <ul class="social-share">
