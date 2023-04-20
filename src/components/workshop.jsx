@@ -1,36 +1,40 @@
 import React from 'react'
 import "../styles/workshop-style.css"
-
+import {BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 const slideData = [
     {
       index: 0,
-  
+      link : "../pages/aicar.html",
       src: "../images/workshops/workshop1.jpg"
     },
     {
       index: 1,
-  
+      link : "../pages/aicar.html",
       src: "../images/workshops/workshop2.jpg"
     },
     {
       index: 2,
-  
+      link : "../pages/aicar.html",
       src: "../images/workshops/workshop3.jpg"
     },
     {
       index: 3,
+      link : "../pages/aicar.html",
       src: "../images/workshops/workshop4.jpg"
     },
     {
         index: 4,
+        link : "../pages/aicar.html",
         src: "../images/workshops/workshop5.jpg"
     },
     {
         index: 5,
+        link : "../pages/aicar.html",
         src: "../images/workshops/workshop6.jpg"
     },
     {
         index: 6,
+        link : "../pages/aicar.html",
         src: "../images/workshops/workshop7.jpg"
     }
   ];
@@ -73,7 +77,7 @@ const slideData = [
     }
   
     render() {
-      const { src, button, headline, index } = this.props.slide;
+      const { src,link, button, headline, index } = this.props.slide;
       const current = this.props.current;
       let classNames = "slide";
   
@@ -90,12 +94,18 @@ const slideData = [
           onMouseLeave={this.handleMouseLeave}
         >
           <div className="slide__image-wrapper">
-            <img
-              className="slide__image"
-              alt={headline}
-              src={src}
-              onLoad={this.imageLoaded}
-            />
+          
+          <Router>
+            <Routes>
+              <Route path={link} element={<img
+                className="slide__image"
+                alt={headline}
+                src={src}
+                link={link}
+                onLoad={this.imageLoaded}
+              />} />
+              </Routes> 
+           </Router>
           </div>
         </li>
       );

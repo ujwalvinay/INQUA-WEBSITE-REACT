@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SELF DRIVING CARS</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <!--...-->
+  <body>
+    <div class="mainsec">
+      <div class="textdiv">
+        
+          <!--Glitch-->
+          <div class="hero-container">
+            <h2 class="hero glitch layers" data-text="workshop"><span>workshop</span></h2>
+         </div>
+          <!--Glitch-->
+        
+      </div>
+    </div>
+
+
+    
+
+
+
+    
+
+    <div id="id01" class="popcard" >
+  <div class="popcol1" ID="leftdiv"  >
+    <div style="padding-bottom: 100%;"></div> <!-- this keeps the aspect ratio 1:1 and makes the placeholder square -->
+    <img class="popimg" src="./assets/posters/AI CAR.jpg" alt="Placeholder image" style="">
+  </div>
+  <div class="popcol2" id="rightdiv">
+    <h2>AI SELF DRIVING CARS</h2>
+    
+    <p>Self-driving cars have rapidly become one of the most transformative technologies to emerge.Deep Learning jobs command some of the highest salaries in the development world. This is the first, and only course which makes practical use of Deep Learning, and applies it to building a self-driving car, one of the most disruptive technologies in the world today.
+      <br><br><b>DETAILS</b> <br>• Upto 40 KTU Activity Points<br>• IIT Bombay (E Cell) Certified <br>• Pacelab IET Certification<br>• Hands on Experiences
+    </p>
+    <br>
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <br class="hidres"> 
+    <div class="popbtndiv">
+      <a href="#"><button class="popbtn1" >✖ Back</button></a>
+      <a href=""><button class="popbtn2" >Register ➜</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+
+var right=document.getElementById('rightdiv').style.height;
+var left=document.getElementById('leftdiv').style.height;
+
+document.getElementById('rightdiv').style.height=left;
+document.getElementById('leftdiv').style.width=left;
+
+
+  </script>
+
+  </body>
+</html>
+
+

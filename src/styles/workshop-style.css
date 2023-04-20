@@ -1,6 +1,6 @@
 .workshop-section
 {
-    background-image: url('./hero-bg.png');
+    background-image: url('./hero-bg.png')!important;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;

@@ -3,7 +3,7 @@ import Hero from './components/hero';
 import About from './components/About';
 import ProShows from './components/proshow';
 import Events from './components/events';
-import Workshop from './components/workshop';
+import Workshop from './components/workshop'
 import Tickets from './components/tickets';
 import ContactUs from './components/contactUs';
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Events />
       </div>
       <div className='workshop-section'>
-        <Workshop />
+        <Workshop/>
       </div>
       <div className='contactUs-section' id='contactUs'>
         <ContactUs />

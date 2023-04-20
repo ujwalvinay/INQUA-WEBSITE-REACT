@@ -4,24 +4,40 @@ import { Suspense } from "react";
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { useLoader } from '@react-three/fiber'
+import { TextureLoader } from 'three/src/loaders/TextureLoader';
+
+import * as THREE from 'three';
 
 // import { useEffect } from 'react'
-import { CameraShake} from '@react-three/drei'
+import { CameraShake } from '@react-three/drei'
 
 const Scene = () => {
   const materials = useLoader(MTLLoader,"../inkubotlp.mtl");
   const obj = useLoader(OBJLoader, "../inkubotlp.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
-    
-  }
-  
-  );
-  
+  });
+  const inquaTexture = useLoader(TextureLoader, '../images/inqua.png');
+  inquaTexture.wrapS = THREE.ClampToEdgeWrapping;
+  inquaTexture.wrapT = THREE.ClampToEdgeWrapping;
 
-  console.log(obj);
+  const inquaMaterial = new THREE.MeshBasicMaterial({
+    map: inquaTexture,
+    side: THREE.DoubleSide,
+    vertexColors: false,
+    polygonOffset: true,
+    polygonOffsetFactor: 0.5, // the amount to offset the material
+    polygonOffsetUnits: 1 
+  });
+
+  obj.traverse((child) => {
+    if (child instanceof THREE.Mesh && child.name === 'Cube.034') {
+      child.material = inquaMaterial;
+    }
+  });
+
   return <primitive object={obj} scale={.7}  />;
-};
+}
 
 
 
